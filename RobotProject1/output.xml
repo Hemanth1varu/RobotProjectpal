@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200122 16:28:10.409" generator="Robot 3.1.2 (Python 2.7.10 on win32)">
+<suite source="C:\Users\Hemanth\eclipse-workspace\RobotProject1" id="s1" name="RobotProject1">
+<suite source="C:\Users\Hemanth\eclipse-workspace\RobotProject1\GreytHR" id="s1-s1" name="GreytHR">
+<suite source="C:\Users\Hemanth\eclipse-workspace\RobotProject1\GreytHR\Login.robot" id="s1-s1-s1" name="Login">
+<test id="s1-s1-s1-t1" name="MyFirstLogin">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://livetest.greythr.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200122 16:28:10.665" level="INFO">Opening browser 'chrome' to base url 'https://livetest.greythr.com/'.</msg>
+<status status="PASS" endtime="20200122 16:28:35.383" starttime="20200122 16:28:10.664"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200122 16:28:39.402" starttime="20200122 16:28:35.383"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200122 16:28:41.404" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20200122 16:28:41.404" starttime="20200122 16:28:39.402"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='username']</arg>
+<arg>5018</arg>
+</arguments>
+<msg timestamp="20200122 16:28:41.406" level="INFO">Typing text '5018' into text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200122 16:28:41.519" starttime="20200122 16:28:41.405"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200122 16:28:43.520" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20200122 16:28:43.520" starttime="20200122 16:28:41.519"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='password']</arg>
+<arg>sa</arg>
+</arguments>
+<msg timestamp="20200122 16:28:43.523" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200122 16:28:43.622" starttime="20200122 16:28:43.521"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200122 16:28:45.623" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20200122 16:28:45.623" starttime="20200122 16:28:43.622"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class='btn btn-primary btn-block mt-1']</arg>
+</arguments>
+<msg timestamp="20200122 16:28:45.626" level="INFO">Clicking button '//button[@class='btn btn-primary btn-block mt-1']'.</msg>
+<status status="PASS" endtime="20200122 16:28:45.714" starttime="20200122 16:28:45.624"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200122 16:28:50.715" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200122 16:28:50.715" starttime="20200122 16:28:45.715"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//li&gt;* :nth-child(6)</arg>
+</arguments>
+<msg timestamp="20200122 16:28:50.716" level="INFO">Clicking button '//li&gt;* :nth-child(6)'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200122 16:28:53.158" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200122 16:28:53.158" starttime="20200122 16:28:52.802"></status>
+</kw>
+<msg timestamp="20200122 16:28:53.178" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //li&gt;* :nth-child(6) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li&gt;* :nth-child(6)' is not a valid XPath expression.
+  (Session info: chrome=79.0.3945.117)
+</msg>
+<status status="FAIL" endtime="20200122 16:28:53.178" starttime="20200122 16:28:50.716"></status>
+</kw>
+<status status="FAIL" endtime="20200122 16:28:53.178" critical="yes" starttime="20200122 16:28:10.663">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //li&gt;* :nth-child(6) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li&gt;* :nth-child(6)' is not a valid XPath expression.
+  (Session info: chrome=79.0.3945.117)
+</status>
+</test>
+<status status="FAIL" endtime="20200122 16:28:53.179" starttime="20200122 16:28:10.469"></status>
+</suite>
+<status status="FAIL" endtime="20200122 16:28:53.181" starttime="20200122 16:28:10.466"></status>
+</suite>
+<status status="FAIL" endtime="20200122 16:28:53.183" starttime="20200122 16:28:10.443"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="RobotProject1" pass="0">RobotProject1</stat>
+<stat fail="1" id="s1-s1" name="GreytHR" pass="0">RobotProject1.GreytHR</stat>
+<stat fail="1" id="s1-s1-s1" name="Login" pass="0">RobotProject1.GreytHR.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
